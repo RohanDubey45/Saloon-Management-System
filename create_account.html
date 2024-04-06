@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Create Account</title>
+    <link rel="stylesheet" type="text/css" href="create_account.css">
+    <style>
+              body {
+        background-image: url(Pink-Gradient-Wallpaper.jpg); /* Replace 'your-background-image.jpg' with the actual image path */
+        background-size: cover; /* This will cover the entire background with the image */
+        background-repeat: no-repeat; /* Prevent the image from repeating */
+        background-attachment: fixed; /* Keeps the background fixed while scrolling */
+    }
+    </style>
+</head>
+<body>
+    <div class="container" style="width: 370px;">
+
+        <h2>Create Account</h2>
+
+        <form id="createAccountForm" action="create_account.php" method="POST">
+            
+            <label for="newEmail">Email:</label>
+            <input type="email" id="newEmail" name="newEmail" pattern="[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}" title="please enter a valid email." required>
+    
+            <label for="newPassword">Password:</label>
+
+            <input type="password" 
+            id="newPassword" 
+            name="newPassword" 
+            pattern="^(?=.*[A-Z])(?=.*[a-z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,}$"
+            title="Enter a password of minimum 8 letters which inlcude one uppercase, one lowercase,
+            minimum one digit from (0-9) and one special character." required>
+    
+            <label for="confirmPassword">Confirm Password:</label>
+            <input type="password" id="confirmPassword" name="confirmPassword"  title="Password and Confirm Password should match." required><br>
+            
+            <input type="hidden" name="action" value="create">
+            <button type="submit">Create Account</button>
+
+        </form>
+        <p id="message"></p>
+    </div>
+
+    
+</body>
+</html>

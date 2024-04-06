@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Your Salon Management System</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f8f8;
+        }
+
+        header {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+        }
+
+        .logo {
+            width: 120px;
+            height: auto;
+        }
+
+        .apple{
+            color: #f8f8f8;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 40px 20px;
+            background-color: white;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+        }
+
+        h1, h2, h3 {
+            color: #333;
+        }
+
+        .services {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            margin-top: 30px;
+        }
+
+        .service {
+            text-align: center;
+            padding: 20px;
+            border-radius: 8px;
+            background-color: #f5f5f5;
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+            transition: transform 0.2s;
+            cursor: pointer;
+        }
+
+        .service:hover {
+            transform: translateY(-5px);
+        }
+
+        .service img {
+            width: 80px;
+            height: 80px;
+            margin-bottom: 10px;
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+        }
+        .book-button {
+            background-color: #ff6b6b;
+            color: white;
+            border: none;
+            padding: 8px 16px;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: background-color 0.2s;
+        }
+
+        .book-button:hover {
+            background-color: #ff4444;
+        }
+        .section {
+            margin-bottom: 40px;
+        }
+
+        /* New styles for testimonials */
+        .testimonials {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .testimonial {
+            flex: 1;
+            padding: 20px;
+            background-color: #f5f5f5;
+            border-radius: 8px;
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+            transition: transform 0.2s;
+        }
+
+        .testimonial:hover {
+            transform: translateY(-5px);
+        }
+
+        .testimonial img {
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="path-to-your-logo.png" alt="Your Salon Logo" class="logo">
+        <h1 class=".Apple">Apple Hair Cutting Saloon</h1>
+    </header>
+
+    <div class="container">
+        <h2>Our Services</h2>
+        <div class="services">
+            <div class="service">
+                <img src="haircut-icon.png" alt="Haircut">
+                <h3>Haircuts</h3>
+                <p>Expert haircuts for all styles.</p>
+            </div>
+            <div class="service">
+                <img src="nails-icon.png" alt="Nails">
+                <h3>Nail Care</h3>
+                <p>Manicures, pedicures, and more.</p>
+            </div>
+            <div class="service">
+                <img src="styling-icon.png" alt="Styling">
+                <h3>Styling</h3>
+                <p>Styling for special occasions.</p>
+            </div>
+        </div>
+    </div>
+    <div>
+        <div class="container">
+            <section class="section">
+                <h2>Our Services</h2>
+                <div class="services">
+                    <!-- Services content... -->
+                </div>
+            </section>
+    
+            <section class="section">
+                <h2>About Us</h2>
+                <p>Your Salon Management System is dedicated to providing top-quality beauty and grooming services. Our experienced professionals are committed to enhancing your natural beauty.</p>
+            </section>
+    
+            <section class="section">
+                <h2>Testimonials</h2>
+                <div class="testimonials">
+                    <div class="testimonial">
+                        <img src="client1.jpg" alt="Client 1">
+                        <p>"I love how my hair looks every time I leave Your Salon. The stylists are amazing!"</p>
+                        <p><em>- Emily S.</em></p>
+                    </div>
+                    <div class="testimonial">
+                        <img src="client2.jpg" alt="Client 2">
+                        <p>"The nail care services here are top-notch. Always a relaxing experience!"</p>
+                        <p><em>- Alex R.</em></p>
+                    </div>
+                </div>
+            </section>
+    
+            <section class="section">
+                <p>If you have any questions or would like to book an appointment, feel free to contact us:</p>
+                <p>Email: info@yoursalon.com</p>
+                <p>Phone: (123) 456-7890</p>
+            </section>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2023 Your Salon Management System. All rights reserved.</p>
+    </footer>
+</body>
+</html>

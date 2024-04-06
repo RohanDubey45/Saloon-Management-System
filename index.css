@@ -1,0 +1,328 @@
+*{
+
+    margin: 0;
+    padding: 0;
+    
+}
+
+#top-nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 99;
+}
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    height: 3.3rem;
+    background-color:#030068;
+    display: flex;
+    justify-content: center;
+  }
+  
+  li {
+    float: left;
+  }
+  
+  li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  /* Change the link color to #111 (black) on hover */
+  li a:hover {
+    background-color: #BD53ED;
+  }
+  .logo{
+    width: 600px;
+    height: 200px;
+    padding-top: 40px;
+    padding-left: 50px;
+
+  }
+.imgtxt{
+    display: flex;
+    align-items: center;
+    font-size: 1.5rem;
+    margin-top:  60px;
+    padding-left: 10px;
+}
+#p{
+  padding-left: 10px;
+}
+
+.container {
+    max-width: 1200px;
+    margin:10px auto;
+    padding: 20px 20px;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+h1, h2, h3 {
+    color: #333;
+}
+
+.services {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-top: 30px;
+}
+
+.service {
+    text-align: center;
+    padding: 20px;
+    border-radius: 8px;
+    background-color: #f5f5f5;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s;
+    cursor: pointer;
+}
+
+.service:hover {
+    transform: translateY(-5px);
+}
+
+.service img {
+    width: 250px;
+    height: 250px;
+    margin-bottom: 10px;
+}
+h1 {
+  padding-left: 560px;
+  
+  color: #000;
+  font-size: 2rem;
+  font-weight: 600;
+}
+h1 span {
+  color: #0c06b5;
+  position: relative;
+}
+h1 span::before {
+  content: "";
+  height: 30px;
+  width: 2px;
+  position: absolute;
+  top: 50%;
+  right: -8px;
+  background: #BD53ED;
+  transform: translateY(-45%);
+  animation: blink 0.7s infinite;
+}
+h1 span.stop-blinking::before {
+  animation: none;
+}
+@keyframes blink {
+  50% { opacity: 0 }
+}
+
+
+
+.appointment-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  margin-left: 600px;
+  padding: 50px;
+  border-radius: 8px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  width: 300px;
+}
+
+input, select {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+button {
+  background-color: #0b0085;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  padding: 10px;
+  width: 100%;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+button:hover {
+  background-color: red;
+}
+/* ... existing CSS styles ... */
+
+.hidden {
+  display: none;
+}
+/* Feedback Form */
+body, h2, form {
+  margin: 0;
+  padding: 0;
+}
+h2{
+  padding-left: 12px;
+}
+
+.feedback-section {
+  display: inline-block;
+  padding: 30px;
+  background-color: #f5f5f5;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  /* min-height: 50vh; */
+  min-width: 40vh;
+  width: 500px;
+}
+
+.feedback-form {
+  width: 70%;
+  max-width: 500px;
+  background-color: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  margin-left: 10px; 
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+form label {
+  display: block;
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+form input[type="text"],
+form input[type="email"],
+form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+form button {
+  background-color: #BD53ED;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  padding: 10px 20px;
+  margin-top: 10px;
+  cursor: pointer;
+  font-weight: bold;
+  display: block;
+  width: 100%;
+}
+
+form button:hover {
+  background-color: #9F36D9;
+}
+/* About us Styling proper records .....*/
+.about-us-section {
+  background-color: #f5f5f5;
+  padding: 40px 0;
+}
+
+.about-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.about-content img {
+  max-width: 400px;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.about-details {
+  max-width: 600px;
+}
+
+.about-details h3 {
+  color:#0c06b5;
+  font-size: 1.7rem;
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+.about-details p {
+  margin: 10px 0;
+}
+.about-us-section h2{
+  padding-left: 210px;
+  font-weight: 700;
+  text-decoration:underline;
+  text-decoration-color:#0c06b5;
+}
+
+
+/* Style for the inventory section */
+
+.inventory-section {
+  background-color: #F5F8FA; /* Light gray background */
+  padding: 40px 0;
+  text-align: center;
+  border-top: 2px solid #E0E4E7; /* Light gray border at the top */
+  border-bottom: 2px solid #E0E4E7; /* Light gray border at the bottom */
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.inventory-content {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px; /* Add some padding for content */
+}
+
+.inventory-content p {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+}
+
+.inventory-images {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.inventory-images img {
+  width: 300px;
+  height: 250px;
+  margin: 0 15px;
+  border: 1px solid #D3D9DE; /* Light gray border around images */
+  border-radius: 4px;
+  padding: 10px; /* Add padding around images */
+}
+
+/* ... your existing CSS code ... */
+
+/* ... your existing CSS code ... */
+
+
+
+
+
